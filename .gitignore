@@ -1,0 +1,15 @@
+# 依赖
+node_modules/
+
+# 构建输出
+_book/
+
+# 日志
+*.log
+npm-debug.log*
+
+# 编辑器目录和文件
+.idea/
+.vscode/
+*.swp
+*.swo 

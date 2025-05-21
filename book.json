@@ -1,0 +1,10 @@
+{
+    "title": "Java开发者学习Go语言指南",
+    "author": "JavaerLearnGo",
+    "language": "zh-hans",
+    "structure": {
+        "readme": "README.md",
+        "summary": "SUMMARY.md"
+    },
+    "plugins": []
+}

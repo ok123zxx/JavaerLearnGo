@@ -1,0 +1,17 @@
+{
+  "name": "javaerlearngo",
+  "version": "1.0.0",
+  "description": "欢迎阅读这本为Java开发者准备的Go语言学习指南。本指南旨在帮助有Java背景的开发者快速掌握Go语言，并理解两种语言之间的异同。",
+  "main": "index.js",
+  "scripts": {
+    "start": "honkit serve",
+    "build": "honkit build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "honkit": "^4.0.7"
+  }
+}
