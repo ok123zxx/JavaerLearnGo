@@ -1,0 +1,30 @@
+name: 构建并部署GitBook到GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 或 master，取决于你的默认分支名称
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
+
+      - name: 设置Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: 安装依赖
+        run: npm install
+        
+      - name: 构建GitBook
+        run: npm run build
+        
+      - name: 部署到GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _book  # 构建输出目录
+          branch: gh-pages  # 部署到的分支 
